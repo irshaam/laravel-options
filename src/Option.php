@@ -76,7 +76,7 @@ class Option extends Model
      * @param  string  $key
      * @return mixed
      */
-    public function delete($key)
+    public function deleteKey($key)
     {
         if ($option = self::where('key', $key)->first()) {
             return $option->delete();
